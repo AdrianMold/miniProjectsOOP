@@ -24,40 +24,6 @@ class mini_calculator:
 # Cream un obiect de tip Calculator
 calculator = mini_calculator()
 
-# facem o bucla pentru a astepta comenzile userului
-while True:
-    print(calculator.valoare_curenta)
-    comanda = input('> ').strip()  # citim comanda si o despartim in operator si numar
-    #comanda2 = comanda.split()
-    if '+' in comanda:
-        numar = float(comanda[1])
-        calculator.adunare(numar)     # apelam fiecare metoda
-    elif '-' in comanda:
-        numar = float(comanda[1])
-        calculator.scadere(numar)
-    elif '*' in comanda:
-        numar = float(comanda[1])
-        calculator.inmultire(numar)
-    elif '/' in comanda:
-        numar = float(comanda[1])
-        calculator.impartire(numar)
-    elif '=' in comanda:
-        numar = float(comanda[1])
-        calculator.setare(numar)
-    elif comanda.lower() == 'x':
-        print('Iesire din calculator!')
-        break
-    else:
-        print('Comanda invalida!')
-
-
-
-
-calculator = mini_calculator()
-calculator.setare(10)
-calculator.adunare(10)
-
-
 # facem o bucla pentru a astepta comenzile utilizatorului
 while True:
     print(f'Valoarea curenta este {calculator.valoare_curenta} ')
