@@ -1,16 +1,73 @@
-# This is a sample Python script.
+from GradiniteMiniProiect.ClaseGradinite.GradinitaPrivata import GradinitaPrivata
+from GradiniteMiniProiect.ClaseGradinite.GradinitaPublica import GradinitaPublica
+from GradiniteMiniProiect.ClaseGradinite.GradinitaPublica25 import GradinitaPublica25
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    gradinita_privata1 = GradinitaPrivata()
+    gradinita_privata1.activitate_practica()
+    gradinita_privata1.ora_de_somn()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    gradinita_publica1 = GradinitaPublica()
+    gradinita_publica1.activitate_practica()
+    gradinita_publica1.ora_de_somn()
+
+    gradinita_publica_25 = GradinitaPublica25()
+    gradinita_publica_25.activitate_practica()
+
+    # object pt a testa culoarea bulinelor
+    gradinita_publica_25.calcul_buline()
+
+    # apelare metpda introduceti informatii elevi pe objectul gradinitapublica25
+    gradinita_publica_25.introduceti_informatii_elevi()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
